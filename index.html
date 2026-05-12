@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0>
+    <title>Main Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gameboy">
+        <div class="brand">FamPG</div>
+        <div class="screen-shell">
+            <div class="screen-bezel">
+                <div id="status-bar">
+                    <span id="hud-lv">LV 1/8</span>
+                    <span id="hud-hoops">● 0/3</span>
+                    <span id="hud-lives">♥ ♥ ♥</span>
+                </div>
+                <canvas id="gameCanvas" width="400" height="270"></canvas>
+                <div class="overlay" id="startScreen">
+                    <h1>Games</h1>
+                    <div class="sub">8 LEVELS OF MAYHEM</div>
+                    <div class="sub">Collect all hoops<br>Avoid the spikes</div>
+                    <div class="sub blink" style="margin-top:6px">Snake</div>
+                </div>
+                <div class="overlay hidden" id="lvScreen">
+                    <div class="level-badge" id="lvBadge">LEVEL 1</div>
+                    <h1 id="lvTitle">THE MEADOW</h1>
+                    <div class="sub" id="lvHoopCount">COLLECT 3 HOOPS</div>
+                    <div class="sub blink" style="margin-top:6px">▲ JUMP TO BEGIN</div>
+                </div>
+                <div class="overlay hidden" id="deathScreen">
+                    <h1 style="font-size:10px">OUCH!</h1>
+                    <div class="sub blink">▲ TRY AGAIN</div>
+                </div>
+                <div class="overlay hidden" id="gameOverScreen">
+                    <h1>GAME<br>OVER</h1>
+                    <div class="sub blink">▲ RESTART</div>
+                </div>
+                <div class="overlay hidden" id="clearScreen">
+                    <div class="big">★★★</div>
+                    <h1>GAME CLEAR!</h1>
+                    <div class="sub">ALL 8 LEVELS BEATEN</div>
+                    <div class="sub blink" style="margin-top:6px">▲ PLAY AGAIN</div>
+                </div>
+            </div>
+        </div>
+        <div class="dpad-area">
+            <button class="btn btn-side" id="leftBtn" aria-label="Left">◀</button>
+            <div class="dpad-center">
+                <button class="btn btn-jump" id="upBtn" aria-label="Jump">▲ JUMP</button>
+      <button class="btn btn-down btn-side" id="downBtn" aria-label="Down" disabled>▼</button>
+    </div>
+    <button class="btn btn-side" id="rightBtn" aria-label="Right">▶</button>
+  </div>
+  <div class="soft-keys">
+    <button class="btn soft-key" id="menuBtn">MENU</button>
+    <button class="btn soft-key" id="selectBtn">SELECT</button>
+  </div>
+</div>
+<script src="game.js"></script>
+
+</body>
+</html>
