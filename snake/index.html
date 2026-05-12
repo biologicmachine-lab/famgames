@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Snake - Universal Play</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <canvas id="canvas"></canvas>
+    
+    <div id="ui-overlay">
+      <div class="control-group left-side">
+        <button id="left" class="control-btn">←</button>
+        <button id="right" class="control-btn">→</button>
+      </div>
+      
+      <div class="control-group right-side">
+        <button id="up" class="control-btn">↑</button>
+        <button id="down" class="control-btn">↓</button>
+      </div>
+
+      <button id="toggle-ui" class="utility-btn">📺 TV Mode</button>
+    </div>
+  </div>
+
+  <script src="render.js"></script>
+  <script src="input.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
