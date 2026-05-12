@@ -130,9 +130,9 @@ canvas{
 }
 
 .btn-side{
-	width:52px;
-	height:70px;
-	border-radius:50%;
+	width:70px;
+	height:60px;
+	border-radius:10%;
 	font-size:18px
 }
 
