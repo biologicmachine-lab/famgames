@@ -70,7 +70,7 @@ canvas {
 
 .utility-btn {
   pointer-events: auto;
-  position: flex;
+  position: absolute;
   top: 20px;
   left: 20px;
   padding: 10px 15px;
